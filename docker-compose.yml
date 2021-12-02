@@ -13,7 +13,7 @@ services:
       - .env
 
   postgres:
-    image: postgres:13
+    image: postgres:latest
     container_name: postgres
     restart: always
     ports:
@@ -25,4 +25,4 @@ services:
 
 volumes:
   postgres:
-    name: nest-db
+    # name: nest-db
